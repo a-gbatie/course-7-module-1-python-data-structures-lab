@@ -1,15 +1,16 @@
 # This module contains functions to process student data.
 
 def format_student_data(student):
-    """
-    Format student data for display.
-    The function should return a formatted string containing:
-    - Student ID
-    - Student Name
-    - Major
-    such as: "ID: 10 | Name: Louis Medina | Major: Computer Science"
-    """
-    pass
+  """
+  Format student data for display.
+  The function should return a formatted string containing:
+  - Student ID
+  - Student Name
+  - Major
+  such as: "ID: 10 | Name: Louis Medina | Major: Computer Science"
+  """
+  student_id, name, major = student # seperates the three values in the tuple
+  return f"ID: {student_id} | Name: {name} | Major: {major}"
 
 def display_students(student_list):
     """
