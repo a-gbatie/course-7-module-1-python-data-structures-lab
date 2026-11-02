@@ -13,8 +13,9 @@ def format_student_data(student):
   return f"ID: {student_id} | Name: {name} | Major: {major}"
 
 def display_students(student_list):
-    """
-    Display all student records.
-    Loop through the student_list and print each student using format_student_data().
-    """
-    pass
+  """
+  Display all student records.
+  Loop through the student_list and print each student using format_student_data().
+  """
+  for student in student_list:
+    print(format_student_data(student)) # prints the formatted string for each student
